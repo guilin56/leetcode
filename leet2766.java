@@ -1,5 +1,5 @@
 import java.util.*;
-//超出内存限制
+//时间用的太长了，记得优化
 public class leet2766 {
     public static void main(String[] args) {
         int [] nums={1,6,7,8},moveFrom={1,7,2},moveTo={2,9,5};
