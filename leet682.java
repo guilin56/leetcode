@@ -1,6 +1,5 @@
 
 import java.util.Stack;
-
 //栈的应用，之前用的比较少
 public class leet682 {
     public static void main(String[] args) {
