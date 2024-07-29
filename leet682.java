@@ -17,16 +17,17 @@ public class leet682 {
                 int last = stack.peek() + pop;
                 stack.push(pop);
                 stack.push(last);
+                result+=stack.peek();
             } else if (operations[i].equals("D")) {
                 stack.push(stack.peek() * 2);
+                result+=stack.peek();
             } else if (operations[i].equals("C")) {
-                stack.pop();
+                result-=stack.pop();
             } else {
                 stack.push(Integer.valueOf(operations[i]));
+                result+=stack.peek();
             }
         }
-        for (Integer i : stack)
-            result += i;
         return result;
     }
 }
